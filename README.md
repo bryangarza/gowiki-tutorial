@@ -26,3 +26,16 @@ for example, is the same for `/edit/` and `/view/`.
 
 http.Error() replies to the request (in this case `w`), just like the other
 http.ResponseWriter does when there are no errors.
+
+from http://golang.org/doc/articles/wiki/#tmp_10 Template Caching
+```
+The function template.Must is a convenience wrapper that panics when passed a
+non-nil error value, and otherwise returns the *Template unaltered. A panic is
+appropriate here; if the templates can't be loaded the only sensible thing to
+do is exit the program.
+
+The ParseFiles function takes any number of string arguments that identify our
+template files, and parses those files into templates that are named after the
+base file name. If we were to add more templates to our program, we would add
+their names to the ParseFiles call's arguments.
+```
