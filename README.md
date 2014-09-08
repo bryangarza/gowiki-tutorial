@@ -23,3 +23,6 @@ repeating the part of code that extracts the title:
 title := r.URL.Path[len("/save/"):]
 ```
 for example, is the same for `/edit/` and `/view/`.
+
+http.Error() replies to the request (in this case `w`), just like the other
+http.ResponseWriter does when there are no errors.
