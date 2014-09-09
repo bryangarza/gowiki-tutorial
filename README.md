@@ -39,3 +39,6 @@ template files, and parses those files into templates that are named after the
 base file name. If we were to add more templates to our program, we would add
 their names to the ParseFiles call's arguments.
 ```
+
+Now we've abstracted getting the title using getTitle() and added validation so
+we can't go to an arbitrary path.
